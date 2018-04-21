@@ -1,0 +1,143 @@
+@import "~assets/styles/_bootstrap";
+
+.indent-page {
+  height: 100%;
+  background: #eeeff1;
+
+  > ._v-container > ._v-content {
+		padding-top: rem(90px);
+	}
+
+  .wrapper {
+
+    .container {
+
+			.list {
+
+				.item {
+					margin-bottom: rem(20px);
+					background-color: #fff;
+
+					.top {
+						position: relative;
+						height: rem(180px);
+						border-bottom: 1px solid $bc;
+
+						.head {
+							position: absolute;
+							top: rem(46px);
+							left: rem(20px);
+							width: rem(85px);
+							height: rem(85px);
+							border-radius: 50%;
+
+							> img {
+								width: 100%;
+								height: 100%;
+								border-radius: 50%;
+							}
+						}
+
+						.box {
+							position: absolute;
+							top: rem(46px);
+							left: rem(135px);
+							width: rem(608px);
+							height: rem(85px);
+
+							.info {
+								padding-bottom: rem(10px);
+								width: 100%;
+								color: #999;
+								font-size: rem(30px);
+								overflow: hidden;
+
+								.name {
+									float: left;
+									color: #000;
+							    width: rem(250px);
+							    white-space: nowrap;
+							    text-overflow: ellipsis;
+							    overflow: hidden;
+								}
+
+								.plate-number {
+									color: #999;
+								}
+
+								.day {
+									float: right;
+									margin-right: rem(20px);
+
+									.city {
+										margin-right: rem(60px);
+									}
+
+									.num {
+										color: #e29300;
+									}
+								}
+							}
+						}
+					}
+
+					.insurance {
+						display: flex;
+						padding: 0 rem(20px);
+						height: rem(112px);
+						line-height: rem(112px);
+						font-size: rem(30px);
+						color: #000;
+						border-bottom: 1px solid $bc;
+
+						.name {
+							flex: 0 0 rem(200px);
+							text-align: left;
+						}
+
+						.content {
+							flex: 1;
+							white-space: nowrap;
+					    text-overflow: ellipsis;
+					    overflow: hidden;
+			        text-align: center;
+						}
+
+						.policy {
+							flex: 0 0 rem(200px);
+							color: #e29300;
+							text-align: right;
+						}
+					}
+
+					.offer {
+						// padding: 0 rem(160px);
+						height: rem(80px);
+						text-align: center;
+
+						.unfold {
+							// float: left;
+							display: inline-block;
+							width: rem(220px);
+							height: rem(80px);
+							line-height: rem(80px);
+							color: #01b3f0;
+
+							&.on > i {
+								transform: rotate(180deg);
+    						transform-origin: 50% 50%;
+							}
+						}
+						.amend {
+							display: inline-block;
+							width: rem(220px);
+							height: rem(80px);
+							line-height: rem(80px);
+							color: #01b3f0;
+						}
+					}
+				}
+			}
+    }
+  }
+}

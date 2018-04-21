@@ -1,0 +1,9 @@
+diff a/src/app/home/components/insurance_information/index.js b/src/app/home/components/insurance_information/index.js	(rejected hunks)
+@@ -3,6 +3,7 @@
+ import Header           from '~common/components/header';
+ import _                  from 'lodash';
+ import BombBox            from '~common/components/bomb_box';
++import CitySelect              from '~common/components/city_select';
+ export default {
+   name: '',
+   data () {

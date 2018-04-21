@@ -1,0 +1,239 @@
+@import "~assets/styles/_bootstrap";
+
+.user-card-detail-page {
+  height: 100%;
+  background: #edf0f0;
+
+  .wrapper {
+    padding: rem(90px) 0;
+  }
+
+  .banner {
+    width: 100%;
+    background: #eee;
+
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    > i {
+      position: absolute;
+      bottom: rem(45px);
+      right: rem(35px);
+    }
+  }
+
+  .time {
+		position: relative;
+    padding: 0 rem(20px);
+    height: rem(120px);
+    line-height: rem(120px);
+    background: #fff;
+
+    .bank-log {
+			position: absolute;
+			top: rem(20px);
+			left: rem(20px);
+			width: rem(80px);
+			height: rem(80px);
+		}
+
+		.bank-name {
+			padding-left: rem(104px);
+			font-size: rem(30px);
+      vertical-align: middle;
+			color: #000;
+		}
+
+		.state {
+			position: absolute;
+			right: rem(20px);
+      bottom: 0;
+      top: 0;
+      margin: auto 0;
+      padding: 0 10px;
+      height: rem(50px);
+      line-height: rem(50px);
+      font-size: rem(28px);
+      color: #fff;
+      border-radius: 50px;
+      background: #2987f6;
+
+			> i {
+				color: #d91717;
+			}
+		}
+  }
+
+  .desc {
+    margin-top: rem(20px);
+    padding: rem(20px);
+    font-size: rem(26px);
+    line-height: rem(40px);
+  }
+
+  .text {
+    margin-top: rem(20px);
+		padding: rem(30px) rem(20);
+		line-height: rem(72px);
+		font-size: rem(28px);
+		background: #fff;
+		overflow: hidden;
+
+		.info {
+			position: relative;
+
+			> span {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+  }
+
+
+  .status {
+    margin: 0 auto;
+    padding: rem(30px) 0;
+    width: rem(654px);
+
+    &:before {
+      display: block;
+      width: 100%;
+      height: rem(82px);
+      clear: both;
+      background: url('~assets/images/card-detail.png') no-repeat;
+      background-size: 100%;
+      content: ' ';
+    }
+
+    .sta-group {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &:after {
+        display: block;
+        clear: both;
+        content: ' ';
+      }
+
+      .sta-txt {
+        float: left;
+        width: calc(100% / 4);
+        height: 100%;
+
+        > i {
+          position: absolute;
+          top: rem(46px);
+          width: rem(50px);
+          height: rem(50px);
+
+          &:before {
+            position: absolute;
+            z-index: 10000;
+          }
+
+          &:after {
+            position: absolute;
+            display: inline-block;
+            top: rem(-4px);
+            bottom: 0;
+            left: rem(50px);
+            margin: auto 0;
+            width: rem(70px);
+            height: rem(10px);
+            background: #21b730;
+            content: ' ';
+          }
+
+          &.sp-failure {
+            &:after {
+              background: #f00;
+            }
+          }
+        }
+
+        > span {
+          position: absolute;
+          display: block;
+          bottom: rem(-10px);
+
+          &.on {
+            color: #2ecc71;
+          }
+
+          &.fall {
+            color: #f00;
+          }
+        }
+
+        &:nth-child(1) {
+          > i {
+            left: rem(16px);
+          }
+
+          > span {
+            left: rem(-5px);
+          }
+        }
+
+        &:nth-child(2) {
+          > i {
+            left: rem(44px);
+
+            &:after {
+              left: rem(-74px);
+              width: rem(190px);
+            }
+          }
+
+          > span {
+            left: rem(24px);
+          }
+        }
+
+        &:nth-child(3) {
+          > i {
+            left: rem(72px);
+
+            &:after {
+              left: rem(-76px);
+              width: rem(190px);
+            }
+          }
+
+          > span {
+            left: rem(52px);
+          }
+        }
+
+        &:nth-child(4) {
+          > i {
+            left: rem(104px);
+
+            &:after {
+              left: rem(-80px);
+              width: rem(120px);
+            }
+          }
+
+          > span {
+            right: rem(-2px);
+          }
+        }
+      }
+    }
+  }
+
+  .foot-tip {
+    text-align: center;
+    padding: rem(50px) 0 rem(20px) 0;
+    font-size: rem(24px);
+  }
+
+}

@@ -1,0 +1,566 @@
+@import "~assets/styles/_bootstrap";
+
+.loan-apply-page {
+  padding-top: rem(90px);
+  height: 100%;
+
+  ._v-container > ._v-content {
+    padding-top: rem(90px);
+  }
+
+  .banner {
+    height: rem(400px);
+
+    > img {
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+
+  .explain {
+    background-color: #fff;
+
+    .title {
+      height: rem(76px);
+      line-height: rem(76px);
+      text-align: center;
+      color: #333;
+      font-size: rem(32px);
+    }
+
+    .content {
+      padding: 0 rem(20px);
+
+      .box {
+        line-height: rem(36px);
+        padding: rem(16px) rem(10px);
+        color: #01b3f0;
+        font-size: rem(24px);
+        text-align: center;
+        background-color: #f7f7f7;
+        box-shadow: inset 0px 0px rem(20px) 0px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  .form-wrapper {
+    padding: rem(4px) rem(30px) rem(30px) rem(20px);
+    background-color: #fff;
+
+    .form-group {
+
+      .list {
+
+        .item {
+          position: relative;
+          display: flex;
+          padding-top: rem(40px);
+
+          i.icon {
+            flex: 0 0 rem(60px);
+            width: rem(60px);
+            height: rem(60px);
+            line-height: rem(60px);
+            text-align: center;
+            font-size: rem(40px);
+            color: #666;
+          }
+
+          .title {
+            height: rem(60px);
+            line-height: rem(60px);
+            padding-left: rem(10px);
+            padding-right: rem(20px);
+            font-size: rem(28px);
+            color: #333;
+          }
+
+          .content {
+            flex: 1;
+            position: relative;
+            min-width: 1px;
+						border-bottom: 1px solid $bc;
+
+            > input {
+              display: block;
+              width: 100%;
+              height: 100%;
+              padding: 0 rem(20px);
+              font-size: rem(28px);
+              color: #333;
+              border: none;
+							outline: none;
+            }
+
+            .code {
+              position: absolute;
+              right: 0;
+              bottom: rem(10px);
+              font-size: rem(28px);
+
+              button {
+                height: rem(60px);
+                line-height: rem(60px);
+                padding: 0 rem(20px);
+                border-radius: rem(10px);
+                color: #fff;
+                background-color: #01b3f0;
+                overflow: hidden;
+
+                &.active {
+                  background-color: #c9c9c9;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .submit-btn {
+        padding-top: rem(50px);
+        text-align: center;
+
+        .btn, > a {
+          display: inline-block;
+          vertical-align: top;
+          width: rem(400px);
+          height: rem(80px);
+          line-height: rem(80px);
+          background-color: #c9c9c9;
+          color: #fff;
+          font-size: rem(32px);
+          border: none;
+          border-radius: rem(10px);
+          outline: none;
+          transition: all .3s;
+
+          &.on {
+            background-color: #01b3f0;
+          }
+        }
+      }
+    }
+  }
+
+  .info-wrapper {
+    padding: rem(20px);
+    background-color: #fff;
+
+    ul.list {
+
+      li.item {
+        overflow: hidden;
+
+        &:not(:last-child) {
+          margin-bottom: rem(10px);
+        }
+
+        &.on {
+
+          > a {
+            background-color: #01b3f0;
+            border: 1px solid #01b3f0;
+            color: #fff;
+
+            .select {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              display: block;
+              width: 0;
+              height: 0;
+              border-top: rem(35px) solid transparent;
+              border-right: rem(35px) solid #fff;
+              border-bottom: rem(35px) solid #fff;
+              border-left: rem(35px) solid transparent;
+              border-radius: 0 0 rem(10px) 0;
+
+              i.icon {
+                font-size: rem(24px);
+              }
+						}
+						
+						.del {
+							position: absolute;
+							top: rem(12px);
+              right: rem(20px);
+
+							> i {
+								padding: rem(10px);
+								font-size: rem(40px);
+							}
+						}
+          }
+        }
+
+        > a {
+          display: block;
+          position: relative;
+          padding: rem(10px) rem(20px);
+          border: 1px solid $bc;
+          border-radius: rem(10px);
+          background-color: #f5f5f5;
+          color: #666;
+          transition: all 0s;
+
+          .text {
+            line-height: rem(42px);
+            font-size: rem(28px);
+          }
+
+          .select {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .add-wrapper {
+    background-color: #fff;
+    padding: rem(10px) rem(20px) rem(30px);
+
+    > a {
+      display: block;
+      vertical-align: top;
+      border: 1px solid $bc;
+      border-radius: rem(10px);
+      overflow: hidden;
+      text-align: center;
+      line-height: rem(84px);
+      color: #666;
+      font-size: rem(30px);
+    }
+  }
+
+  .next-step {
+    padding-top: rem(20px);
+    padding-bottom: rem(50px);
+    text-align: center;
+
+    > a {
+      display: inline-block;
+      vertical-align: top;
+      width: rem(400px);
+      height: rem(80px);
+      line-height: rem(80px);
+      background-color: #01b3f0;
+      color: #fff;
+      font-size: rem(32px);
+      border: none;
+      border-radius: rem(10px);
+    }
+  }
+
+  .agree-wrapper {
+    padding-top: rem(30px);
+    padding-bottom: rem(50px);
+
+    .agree {
+      height: rem(46px);
+      line-height: rem(46px);
+      text-align: center;
+      margin-bottom: rem(18px);
+
+      .link {
+        font-size: rem(28px);
+        color: #01b3f0;
+      }
+    }
+
+    .tips {
+      line-height: rem(40px);
+      padding: 0 rem(36px) rem(10px);
+      font-size: rem(28px);
+      color: #999;
+    }
+  }
+
+  .jump-layer {
+
+    .mask {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .jump-bank {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: rem(500px);
+      padding: rem(60px) 0 rem(28px);
+      margin-left: rem(-250px);
+      margin-top: rem(-217px);
+      background-color: #fff;
+      border-radius: rem(10px);
+      text-align: center;
+
+      .jump-loading {
+        text-align: center;
+        margin-bottom: rem(28px);
+
+        .spinner {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: rem(88px);
+          height: rem(88px);
+
+          .container1 > div, .container2 > div, .container3 > div {
+            width: rem(20px);
+            height: rem(20px);
+            background-color: #9b9b9b;
+
+            border-radius: 100%;
+            position: absolute;
+            -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+            animation: bouncedelay 1.2s infinite ease-in-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+          }
+
+          .spinner-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+
+          .container2 {
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+          }
+
+          .container3 {
+            -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+          }
+
+          .circle1 { top: 0; left: 0; }
+          .circle2 { top: 0; right: 0; }
+          .circle3 { right: 0; bottom: 0; }
+          .circle4 { left: 0; bottom: 0; }
+
+          .container2 .circle1 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+          }
+
+          .container3 .circle1 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+          }
+
+          .container1 .circle2 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+          }
+
+          .container2 .circle2 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+          }
+
+          .container3 .circle2 {
+            -webkit-animation-delay: -0.7s;
+            animation-delay: -0.7s;
+          }
+
+          .container1 .circle3 {
+            -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+          }
+
+          .container2 .circle3 {
+            -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+          }
+
+          .container3 .circle3 {
+            -webkit-animation-delay: -0.4s;
+            animation-delay: -0.4s;
+          }
+
+          .container1 .circle4 {
+            -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+          }
+
+          .container2 .circle4 {
+            -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s;
+          }
+
+          .container3 .circle4 {
+            -webkit-animation-delay: -0.1s;
+            animation-delay: -0.1s;
+          }
+        }
+      }
+
+      .text {
+        height: rem(50px);
+        line-height: rem(50px);
+        color: #333;
+        font-size: rem(28px);
+        margin-bottom: rem(23px);
+      }
+
+      .bank-name {
+        height: rem(58px);
+        line-height: rem(58px);
+        font-size: rem(32px);
+        color: #333;
+        margin-bottom: rem(26px);
+
+        span, i {
+          display: inline-block;
+          vertical-align: top;
+        }
+
+        i.icon {
+          height: 100%;
+          padding: rem(8px) 0;
+
+          > img {
+            display: block;
+            height: 100%;
+          }
+        }
+      }
+    }
+	}
+	.mask-bank {
+		height: 100%;
+
+		.inner {
+			height: 100%;
+
+			&:before {
+				position: fixed;
+				display: block;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				content: ' ';
+				background: rgba(0, 0, 0, .3);
+				z-index: 2100;
+			}
+
+			.content {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				margin: auto;
+				width: rem(655px);
+				height: rem(670px);
+				border-radius: rem(10px);
+				background: #fff;
+				z-index: 2200;
+
+				.head {
+					height: rem(120px);
+					line-height: rem(120px);
+					text-align: center;
+					border-bottom: 1px solid $bc;
+
+					> span {
+						font-size: rem(32px);
+						color: #333;
+					}
+
+					> i {
+						position: absolute;
+						top: 0;
+						right: rem(30px);
+						bottom: 0;
+						margin: auto 0;
+					}
+
+				}
+
+				.main {
+					height: rem(550px);
+
+					.list {
+						height: 100%;
+
+						.item {
+							padding: 0 rem(30px);
+							height: rem(110px);
+							line-height: rem(110px);
+							border-bottom: 1px solid $bc;
+
+							&:last-child {
+								border-bottom: none;
+							}
+
+							.img {
+								display: inline-block;
+								width: rem(50px);
+								height: rem(50px);
+								vertical-align: middle;
+
+								> img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+
+							.name {
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								left: rem(120px);
+								margin: auto 0;
+								width: rem(550px);
+								height: rem(50px);
+								line-height: rem(50px);
+								vertical-align: middle;
+
+								> span {
+									font-size: rem(28px);
+									color: #333;
+								}
+							}
+
+							> i {
+								position: absolute;
+								top: 0;
+								right: rem(30px);
+								bottom: 0;
+								margin: auto 0;
+								width: rem(40px);
+								height: rem(40px);
+								border-radius: 50%;
+								overflow: hidden;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+}
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+	}
+
+}
